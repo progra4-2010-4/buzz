@@ -1,0 +1,135 @@
+body {
+	font-family: Arial, Verdana, Geneva, helvetica, sans-serif;
+	margin: 0px;
+	background-image: url(images/back);
+	background-repeat: repeat-x;
+	background-color: #121212;
+  	font-size: 13px;
+  	color: #fff;
+}
+
+table {
+	font-size: 12px;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #f6cb22;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	color: #222;
+	font-weight: normal;
+	margin: 0px;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	font-weight: normal;
+	margin: 0px;
+}
+
+a {
+	color: #F6CB22;
+	text-decoration: none;
+}
+
+
+
+#container_big {
+	width: 818px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#container {
+	float: left;
+	position: relative;
+	width: 818px;
+	text-align: left;
+	padding: 0px;
+}
+
+
+#header {
+	float: left;
+	position: relative;
+	width: 818px;
+	height: 139px;
+	text-align: left;
+	background-image: url(images/hd.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+ #logo a{font-size:33px ;color:##8181F7; display:block; padding-top:20px;padding-left: 12px;}
+ 
+ #slogan {font-size:11px;display:block; padding-left: 20px;}
+ 
+#menu {
+	float: right;
+	position: absolute;
+	width: 880px;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	overflow: hidden;
+	height: 35px;
+	text-align: center;
+	top: 82px;
+	left: 0px;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	background: url(images/a_link.gif) no-repeat right;
+	position: relative;
+	text-align: center;
+	width: 165px;
+	height: 35px;
+	overflow: hidden;
+	line-height: 33px;
+	color: #fff;
+}
+
+#menu a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+
+.box {
+	float: left;
+	position: relative;
+	width: 235px;
+	margin-left: 10px;
+}
+
+
+#content {
+	float: left;
+	position: relative;
+	width: 818px;
+	text-align: left;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #121212;
+}
+
+#main {
+	float: left;
+	position: relative;
+	width: 500px;
+	left: 4px;
+}
