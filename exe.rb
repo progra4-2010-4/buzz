@@ -10,5 +10,5 @@ get ('/home'){erb :home }
 get ('/Traffic'){erb :Traffic }
 get ('/Notes'){erb :Notes }
 get ('/FriendsFinder'){erb :FriendsFinder }
-get ('/developers'){erb :home }
+get ('/developers'){erb :developers }
 
