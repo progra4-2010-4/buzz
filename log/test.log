@@ -1,0 +1,27 @@
+  Processing by StaticController#index as HTML
+Rendered static/index.html.erb within layouts/application (67.5ms)
+Completed 200 OK in 73ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Mon Nov 08 20:58:11 -0600 2010
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Mon Nov 08 21:02:14 -0600 2010
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 08 21:02:14 -0600 2010
+  Processing by StaticController#index as HTML
+Rendered static/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Mon Nov 08 21:04:21 -0600 2010
+
+
+Started GET "/" for 127.0.0.1 at Mon Nov 08 21:04:21 -0600 2010
+  Processing by StaticController#index as HTML
+Rendered static/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  Processing by StaticController#index as HTML
+Rendered static/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)

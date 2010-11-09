@@ -1,0 +1,87 @@
+body{
+background-color:#000;
+font-family: 'Reenie Beanie', arial, serif;
+}
+
+body {
+	font-family:arial;	
+}
+
+.qitem {
+	/* width and height must be even number */
+	width:126px;
+	height:126px;	
+	
+	/* some styling for the item */
+	border:4px solid #222;	
+	margin:5px 5px 5px 0;
+	background: url('/images/fondo.jpg') no-repeat;
+	
+	/* make sure the four divs are hidden after changing the position */
+	overflow:hidden;
+	
+	/* absolute position enabled for children elements*/
+	position:relative;
+	
+	/* display item in single row */
+	float:left;
+	
+	/* hand symbol for ie and other browser */
+	cursor:hand; cursor:pointer;
+}
+
+	.qitem img {
+		border:0;
+	}
+
+	/* styling for caption, position absolute is a must to set the z-index */
+	.qitem .caption {
+		position:absolute;
+		z-index:0;	
+		color:#ccc;
+		display:block;
+	}
+
+		.qitem .caption h4 {
+			font-size:12px;
+			padding:10px 5px 0 8px;
+			margin:0;
+			color:#369ead;
+		}
+
+		.qitem .caption p {
+			font-size:10px;	
+			padding:3px 5px 0 8px;
+			margin:0;
+		}
+
+
+
+/* Generic setting for corners */
+.topLeft, .topRight, .bottomLeft, .bottomRight {
+	/* allow javascript to move the corners */
+	position:absolute;
+	background-repeat: no-repeat; 
+	z-index:200;
+}
+
+/* set the background position for different corners */
+.topLeft {
+	background-position: top left; 	
+} 
+
+.topRight {
+	background-position: top right; 
+} 
+
+.bottomLeft {
+	background-position: bottom left; 
+} 
+
+.bottomRight {
+	background-position: bottom right; 
+}
+
+.clear {
+	clear:both;	
+}
