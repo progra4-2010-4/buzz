@@ -4,6 +4,21 @@ gem 'rails', '3.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+group :development, :test do 
+      gem 'cucumber-rails'
+      gem 'capybara'
+end
+
+group :development, :test do 
+  gem 'autotest', '4.3.2'
+  gem 'autotest-rails-pure', '4.1.0'
+  gem 'redgreen'
+  gem 'test_notifier'
+  gem 'annotate-models', '~> 1.0.4'
+end
+
+gem 'devise'
+gem 'jquery-rails', '~> 0.2.5'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 

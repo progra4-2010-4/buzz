@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Buzz</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-  <link href='http://fonts.googleapis.com/css?family=Neucha&subset=latin' rel='stylesheet' type='text/css'/>
+<h1>Smart Traffic</h1>
+<div class="qitem">
+	<a href="http://www.google.com"><img src="/images/1.gif" alt="Test 1" title="" width="126" height="126"/></a>
+	<span class="caption"><h4>Night Club</h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></span>
+</div>
 
 <script type="text/javascript">	
 	
@@ -70,10 +67,3 @@ $(document).ready(function() {
 });
 </script>
 
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-</html>
