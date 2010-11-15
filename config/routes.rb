@@ -1,4 +1,6 @@
 Buzz::Application.routes.draw do
+  resources :alertas
+
   root :to => "static#index"
 
   # The priority is based upon order of creation:
