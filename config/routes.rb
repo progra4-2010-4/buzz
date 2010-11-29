@@ -1,4 +1,16 @@
 Buzz::Application.routes.draw do
+  get "traffic_alert/index"
+
+  get "traffic_alert/show"
+
+  get "traffic_alert/update"
+
+  get "traffic_alert/destroy"
+
+  get "traffic_alert/edit"
+
+  get "traffic_alert/create"
+
   resources :alertas
 
   root :to => "static#index"

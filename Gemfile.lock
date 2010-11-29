@@ -132,6 +132,7 @@ DEPENDENCIES
   cucumber-rails
   devise
   jquery-rails (~> 0.2.5)
+  nokogiri
   rails (= 3.0.1)
   redgreen
   sqlite3-ruby

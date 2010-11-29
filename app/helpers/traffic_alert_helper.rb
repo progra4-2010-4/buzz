@@ -1,0 +1,2 @@
+module TrafficAlertHelper
+end
