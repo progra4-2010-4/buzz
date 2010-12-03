@@ -1,16 +1,6 @@
 Buzz::Application.routes.draw do
-  get "alerts/index"
-
-  get "alerts/show"
-
-  get "alerts/create"
-
-  get "alerts/edit"
-
-  get "alerts/update"
-
-  get "alerts/destroy"
-
+	resources :alerts
+        root :to => "alerts#new"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
