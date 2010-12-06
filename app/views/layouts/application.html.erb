@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Buzz</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Traffic Report</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" />
 </head>
 <body>
-
-<%= yield %>
-
+<div id="page">
+    <h1>Traffic Report</h1>
+    <div id="slideshowContainer">
+        <div id="slideshow">
+            <img src="img/slides/slide1.jpg" width="454" height="169" alt="Coming Soon: Our Awesome Web App">
+            <img src="img/slides/slide2.jpg" width="454" height="169" alt="Extensive Functionality">
+            <img src="img/slides/slide3.jpg" width="454" height="169" alt="Complete with an iPhone App">
+        </div>
+        </div>
+    <h2>Subscribe</h2>
+    <form method="post" action="">
+        <input type="text" id="email" name="email" value="<?php echo $msg?>" />
+        <input type="submit" value="Submit" id="submitButton" />
+    </form>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script src="js/jquery.nivo.slider.pack.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
