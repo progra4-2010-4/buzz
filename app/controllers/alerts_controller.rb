@@ -9,6 +9,12 @@ class AlertsController < ApplicationController
 
   def create
   @alert = Alert.new params[:alert]
+  if @alert.save
+  redirect_to new_alert_path 
+  else
+  @alertas = Alert.all
+  render :new
+  end
   end
 
   def edit
@@ -21,6 +27,7 @@ class AlertsController < ApplicationController
   end
 
   def new
-  @alert = Alert.new   
+  @alert = Alert.new 
+  @alertas= Alert.all  
   end
 end
