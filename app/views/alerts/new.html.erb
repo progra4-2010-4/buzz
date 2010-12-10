@@ -1,8 +1,16 @@
 <h1>Crear Alertas</h1>
 <%=semantic_form_for @alert do |f|%>
-<%=f.inputs%>
+<%=f.text_area%>
 <%=f.buttons%>
 <%end%>
 
+<%@alertas.each do |t|%>
+<span>
+<%=t.content%> created at: <%=distance_of_time_in_words DateTime.now, t.created_at%> ago
 
-
+</span>
+<br/>
+<%end%>
+<%@twets.each_line do |t|%>
+<%=t%>
+<%end%>

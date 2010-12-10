@@ -12,7 +12,7 @@ class AlertsController < ApplicationController
   if @alert.save
   redirect_to new_alert_path 
   else
-  @alertas = Alert.all
+  @alertas = Alert.all.reverse!
   render :new
   end
   end
@@ -28,6 +28,7 @@ class AlertsController < ApplicationController
 
   def new
   @alert = Alert.new 
-  @alertas= Alert.all  
+  @alertas= Alert.all.reverse!
+  @twets = open("http://search.twitter.com/search.atom?q=from:traficoentegus")  
   end
 end
