@@ -30,6 +30,8 @@ GEM
     activesupport (3.0.3)
     arel (2.0.4)
     builder (2.1.2)
+    dancroak-twitter-search (0.5.8)
+      json (>= 1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     formtastic (1.1.0)
@@ -75,6 +77,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dancroak-twitter-search
   formtastic (~> 1.1.0)
   json
   nokogiri
