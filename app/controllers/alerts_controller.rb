@@ -29,6 +29,7 @@ class AlertsController < ApplicationController
   def new
   @alert = Alert.new 
   @alertas= Alert.all.reverse!
-  @twets = open("http://search.twitter.com/search.atom?q=from:traficoentegus")  
+  client = TwitterSearch::Client.new('buzz')
+  @twets = client.query(:q => 'from:traficoentegus')  
   end
 end

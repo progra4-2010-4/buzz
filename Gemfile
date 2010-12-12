@@ -9,6 +9,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'nokogiri'
 gem 'formtastic', '~> 1.1.0'
 gem 'json'
+gem 'dancroak-twitter-search'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

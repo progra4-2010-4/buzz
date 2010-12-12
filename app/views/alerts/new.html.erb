@@ -1,6 +1,6 @@
 <h1>Crear Alertas</h1>
 <%=semantic_form_for @alert do |f|%>
-<%=f.text_area%>
+<%=f.inputs%>
 <%=f.buttons%>
 <%end%>
 
@@ -11,6 +11,8 @@
 </span>
 <br/>
 <%end%>
-<%@twets.each_line do |t|%>
-<%=t%>
+<%=@twets.each do |t|%>
+<%=t.text%>
 <%end%>
+
+

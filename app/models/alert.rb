@@ -1,5 +1,5 @@
 class Alert < ActiveRecord::Base
-require 'nokogiri'
+require 'twitter_search'
 validates_presence_of :content
 
 end
