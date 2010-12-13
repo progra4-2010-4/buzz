@@ -5,7 +5,7 @@ class AlertsController < ApplicationController
   end
 
   def show
-    @alert = Alert.find(params[:id])
+    @alert = = Alert.find(params[:id])
   end
 
   def create
