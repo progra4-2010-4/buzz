@@ -13,10 +13,10 @@
 
 <%@alertas.each do |t|%>
 <span class ="alerta">
-<%=t.content%> created at: <%=distance_of_time_in_words DateTime.now, t.created_at%> ago
-
-</span>
+<%=t.content%> 
 <br/>
+<h6><%=link_to  "View Alert", alert_path(t)%> created: <%=distance_of_time_in_words DateTime.now, t.created_at%> ago</h6>
+</span>
 <%end%>
 
 
