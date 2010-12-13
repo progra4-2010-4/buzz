@@ -6,11 +6,7 @@
 <%=f.buttons%>
 <%end%>
 
-<<<<<<< HEAD
-<% @alertas.each do |t|%>
-<%=t.content%>
-<br></br>
-<%end%>
+
 
 =======
 <%@alertas.each do |t|%>
