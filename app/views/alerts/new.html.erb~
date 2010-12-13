@@ -1,7 +1,7 @@
 <h1>Crear Alertas</h1>
 <%=semantic_form_for @alert do |f|%>
 <%=f.inputs do%>
-<%=f.input :lugar%>
+<%=f.input :lugar, :as => :text%>
 <%=f.input :content, :as => :text,:input_html => { :rows => 5 } %>
 <%end%>
 <%=f.buttons%>
