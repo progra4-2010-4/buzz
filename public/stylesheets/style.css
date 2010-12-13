@@ -1,8 +1,9 @@
 body{
-background-color: #FFF;
+background-color: #FFFF30;
 color: #000;
 font-family: 'Josefin Sans', arial, serif;
-}
+} 
+  
 input, textarea{
 	border: 1px solid #cbcbcb;
 	padding: 4px;
@@ -14,12 +15,22 @@ input, textarea{
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
+.header{
+background-color:#FFF;
+color:#000;
+height: 50px;
+font-size:30px;
+}
+#map_canvas{
+	width: 400px;
+	height: 400px; 
 
+}
 .alerta{
-	width: 605px;
+	width: 700px;
 	min-height: 80px;
  	float: right;
- 	padding: 15px;
+ 	padding: 5px;
 	color: #525252;
 	/*background-image: -moz-linear-gradient(100% 100% 180deg, , #eef9fe) !important;
     background-image: -webkit-gradient(linear, 0%  0%, 0% 100%, from(#fff), to(#eef9fe)) !important;
@@ -31,13 +42,13 @@ input, textarea{
 	box-shadow: 3px 3px 0px #C0C0C0;
 	
  	background-color: #FFF;
-	font-size: 12px;
+	font-size: 24px;
  	
-	margin: 10px 30px 20px 10px;
+ 	margin: 10px 200px 20px 10px; 
 	
 	-moz-border-radius: 4px;
 	-khtml-border-radius: 4px;
 	-webkit-border-radius: 4px;
-	border-radius: 4px;
+	border-radius: 8px;
 	
 }
