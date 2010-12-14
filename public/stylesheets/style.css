@@ -1,9 +1,17 @@
 body{
-background-color: #FFFF30;
+background-color: #FFFFFF;
 color: #000;
 font-family: 'Josefin Sans', arial, serif;
 } 
-  
+.links{
+width: 60px;
+}  
+
+.header{
+font-family: 'Reenie Beanie', arial, serif;
+font-size:32px;
+background-image:url(/images/1.jpg) repeat;
+}
 input, textarea{
 	border: 1px solid #cbcbcb;
 	padding: 4px;
@@ -15,16 +23,10 @@ input, textarea{
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 }
-.header{
-background-color:#FFF;
-color:#000;
-height: 50px;
-font-size:30px;
-}
 #map_canvas{
 	width: 400px;
 	height: 400px; 
-
+	margin-left: 600px;
 }
 .alerta{
 	width: 700px;
@@ -32,17 +34,13 @@ font-size:30px;
  	float: right;
  	padding: 5px;
 	color: #525252;
-	/*background-image: -moz-linear-gradient(100% 100% 180deg, , #eef9fe) !important;
-    background-image: -webkit-gradient(linear, 0%  0%, 0% 100%, from(#fff), to(#eef9fe)) !important;
-	border-bottom: 1px solid #bde2ff;
-	border-top: 1px solid #ffffff;*/
 	
-	-webkit-box-shadow: 3px 3px 0px #C0C0C0;
-	-moz-box-shadow: 3px 3px 0px #C0C0C0;
-	box-shadow: 3px 3px 0px #C0C0C0;
+	-webkit-box-shadow: 3px 3px 0px #FE9A2E;
+	-moz-box-shadow: 3px 3px 0px #FE9A2E;
+	box-shadow: 3px 3px 0px #FE9A2E;
 	
- 	background-color: #FFF;
-	font-size: 24px;
+ 	background-color: #FFFF00;
+	font-size: 20px;
  	
  	margin: 10px 200px 20px 10px; 
 	
