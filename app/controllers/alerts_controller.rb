@@ -6,7 +6,8 @@ class AlertsController < ApplicationController
 
   def show
     @alert = Alert.find(params[:id])
-    @comentarios = @alert.comments.all
+    @comentarios = @alert.comments.find(:all, :order => 'created_at ASC').paginate(:per_page => 3, :page => params[:page])
+    #@comentarios = @alert.comments.all
   end
 
   def create
@@ -31,6 +32,7 @@ class AlertsController < ApplicationController
   def new
   @alert = Alert.new 
   @alertas= Alert.all.reverse!
+  @alertas = Alert.find(:all, :order => 'created_at ASC').paginate(:per_page => 3, :page => params[:page])
   client = TwitterSearch::Client.new('buzz')
   @twets = client.query(:q => 'from:traficoentegus')  
   end

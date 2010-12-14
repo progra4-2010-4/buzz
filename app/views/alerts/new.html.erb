@@ -1,4 +1,3 @@
-
 <%=semantic_form_for @alert do |f|%>
 <%=f.inputs do%>
 <%=f.input :lugar, :label => "Ingrese la dirección!"%>
@@ -14,6 +13,8 @@
 <span class= "alerta">
 <%=@twets[0].text%>
 </span>
+
+<%= will_paginate @alertas%>
 
 <%@alertas.each do |t|%>
 <span class ="alerta">
