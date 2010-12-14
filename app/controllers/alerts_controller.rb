@@ -6,7 +6,6 @@ class AlertsController < ApplicationController
 
   def show
     @alert = Alert.find(params[:id])
-    @comentario= Comment.new
     @comentarios = @alert.comments.all
   end
 

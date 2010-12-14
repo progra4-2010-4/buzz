@@ -6,3 +6,12 @@
   </div>
 <div id="map_canvas"></div>
 
+<div>
+<ul>
+
+<%@comentarios.each do |t|%>
+<li><%=t.contenido%></li>
+<br/>
+<%end%>
+</ul>
+</div>
