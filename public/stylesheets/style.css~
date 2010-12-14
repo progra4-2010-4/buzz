@@ -31,7 +31,7 @@ margin:0 auto;
 
 #col1 {
 float:left;
-width:600px;
+width:650px;
 }
 
 #map_canvas{

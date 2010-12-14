@@ -3,14 +3,22 @@
     <p id="address"> <%=@alert.lugar %>, Tegucigalpa</p>
     <p id="content"> <%= @alert.content%> </p>
     <!--<input type="button" value="Geocode" onclick="codeAddress()">-->
+    <p>Comentarios</p>
+    <ul>
+	<%@comentarios.each do |t|%>
+	    <li><%=t.content%></li>
+	    <br/>
+	<%end%>
+    </ul>
   </div>
 <div id="map_canvas"></div>
 
+
+
 <div>
 <ul>
-
 <%@comentarios.each do |t|%>
-<li><%=t.contenido%></li>
+<li><%=t.content%></li>
 <br/>
 <%end%>
 </ul>
