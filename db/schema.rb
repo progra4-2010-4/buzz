@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101213053215) do
+ActiveRecord::Schema.define(:version => 20101214024759) do
 
   create_table "alerts", :force => true do |t|
     t.string   "content"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(:version => 20101213053215) do
     t.datetime "updated_at"
     t.integer  "alert_id"
     t.string   "alert"
+    t.text     "contenido"
+  end
+
+  create_table "discusions", :force => true do |t|
+    t.text     "contenido"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "alert_id"
   end
 
 end

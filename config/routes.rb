@@ -2,6 +2,7 @@ Buzz::Application.routes.draw do
 
 	resources :alerts do 
    		resources :comments
+		resources :discusions
         end
         root :to => "alerts#new"
   # The priority is based upon order of creation:
