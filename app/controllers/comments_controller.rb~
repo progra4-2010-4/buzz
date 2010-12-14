@@ -13,6 +13,15 @@ class CommentsController < ApplicationController
   end
 
   def create
+<<<<<<< HEAD
+    @alert= Alert.find(params[:alert_id])
+    @comentario = Comment.new params[:comment]
+    @comentario.alert_id = @alert.id
+    if @comentario.save
+      redirect_to alert_path(@alert)
+    else
+      render :new
+=======
     @alert= Alert.find(params[:alert_id])   
      @comment = Comment.new(params[:comment])
      @comment.alert= @alert
@@ -21,6 +30,7 @@ class CommentsController < ApplicationController
    redirect_to alert_path(@alert)
    else
     render :new
+>>>>>>> eae77202167618c214623344f36a87ecb3070826
    end
   end
 

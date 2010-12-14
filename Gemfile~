@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+source "http://gems.github.com"
 
 gem 'rails', '3.0.3'
 
@@ -9,11 +10,9 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'nokogiri'
 gem 'formtastic', '~> 1.1.0'
 gem 'json'
-<<<<<<< HEAD
-=======
+
 gem 'dancroak-twitter-search'
 
->>>>>>> bcc7848b446b9103f0d2c488f9a0b406e8b9cdd3
 # Use unicorn as the web server
 # gem 'unicorn'
 

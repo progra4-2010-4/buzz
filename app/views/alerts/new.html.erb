@@ -1,20 +1,28 @@
-<h1>Crear Alertas</h1>
 <%=semantic_form_for @alert do |f|%>
 <%=f.inputs do%>
-<%=f.input :lugar%>
-<%=f.input :content, :as => :text,:input_html => { :rows => 5 } %>
-<%end%>
-<%=f.buttons%>
+<%=f.input :lugar, :label => "Ingrese la dirección!"%>
+<%=f.input :content, :as => :text,:input_html => { :rows => 3 }, :label => "Ingrese una descripción del suceso." %>
 <%end%>
 
-<%@alertas.each do |t|%>
-<span class ="alerta">
-<%=t.content%> created at: <%=distance_of_time_in_words DateTime.now, t.created_at%> ago
+<% f.buttons do %>
+<%= f.commit_button "Crear Alerta" %>
+<% end %>
 
-</span>
-<br/>
 <%end%>
 
 <span class= "alerta">
 <%=@twets[0].text%>
 </span>
+
+<%= will_paginate @alertas%>
+
+<%@alertas.each do |t|%>
+<span class ="alerta">
+<strong><%=t.lugar%>:</strong>
+<%=t.content%> 
+<br/>
+<h6><%=link_to  "Ver Alerta", alert_path(t)%> created: <%=distance_of_time_in_words DateTime.now, t.created_at%> ago. <%=link_to "Comentar", new_alert_comment_path(t.id)%></h6>
+</span>
+<%end%>
+
+

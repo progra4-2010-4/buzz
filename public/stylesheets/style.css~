@@ -1,20 +1,7 @@
-body
-{
-background-image:url(/images/images.jpg);
-background-repeat:no-repeat;
-background-attachment:scroll;
-background-position:95%;
-}
 body{
-background-color: #C0C0C0;
+background-color: #FFFFFF;
 color: #000;
 font-family: 'Josefin Sans', arial, serif;
-font-size:20px;
-border-width:3px;
-border-style:solid;
-border-color:purple;
-font-weight: 400;
-
 } 
 .links{
 width: 60px;
@@ -22,19 +9,14 @@ width: 60px;
 
 .header{
 font-family: 'Reenie Beanie', arial, serif;
-font-size:40px;
-text-shadow: 6px 6px 6px #FFE87C;
-font-weight: 1000;
+font-size:32px;
 background-image:url(/images/1.jpg) repeat;
-border-width:3px;
-border-style:dashed;
-border-color:purple;
 }
 input, textarea{
-	border: 5px solid #cbcbcb;
-	padding: 6px;
-	color: black;
-	font-size: 25px;
+	border: 1px solid #cbcbcb;
+	padding: 4px;
+	color: gray;
+	font-size: 18px;
 	
 	-moz-border-radius: 5px;
 	-khtml-border-radius: 5px;
@@ -43,20 +25,19 @@ input, textarea{
 }
 
 #wrap {
-width:1200px;
+width:1050px;
 margin:0 auto;
 }
 
 #col1 {
 float:left;
-width:600px;
+width:650px;
 }
 
 #map_canvas{
-background-color: #C0C0C0;
-position:95%;
-width:600px;
-height:600px;
+float:right;
+width:450px;
+height:450px; 
 }
 
 /*#map_canvas{
@@ -68,14 +49,14 @@ height:600px;
 	width: 700px;
 	min-height: 80px;
  	float: right;
- 	padding: 10px;
+ 	padding: 5px;
 	color: #525252;
 	
-	-webkit-box-shadow: 7px 7px 7px #FE9A2E;
-	-moz-box-shadow: 4px 4px 4px #FE9A2E;
+	-webkit-box-shadow: 3px 3px 0px #FE9A2E;
+	-moz-box-shadow: 3px 3px 0px #FE9A2E;
 	box-shadow: 3px 3px 0px #FE9A2E;
 	
- 	background-color: #FDD017;
+ 	background-color: #FFFF00;
 	font-size: 20px;
  	
  	margin: 10px 200px 20px 10px; 

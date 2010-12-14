@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+source "http://gems.github.com"
 
 gem 'rails', '3.0.3'
 
@@ -6,6 +7,7 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'will_paginate', '3.0.pre2'
 gem 'nokogiri'
 gem 'formtastic', '~> 1.1.0'
 
