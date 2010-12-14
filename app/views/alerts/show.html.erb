@@ -4,12 +4,16 @@
     <p id="content"> <%= @alert.content%> </p>
     <!--<input type="button" value="Geocode" onclick="codeAddress()">-->
     <p>Comentarios</p>
-    <ul>
-	<%@comentarios.each do |t|%>
-	    <li><%=t.content%></li>
-	    <br/>
-	<%end%>
-    </ul>
+    <%if @comentarios.blank?%>
+      <p>No hay comentarios todavía. <%=link_to "Se el primero!", new_alert_comment_path(@alert.id)%></p>
+    <%else%>
+      <ul>
+	  <%@comentarios.each do |t|%>
+	      <li><%=t.content%></li>
+	      <br/>
+	  <%end%>
+      </ul>
+    <%end%>
   </div>
   <div id="map_canvas"></div>
 </div>

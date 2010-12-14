@@ -1,10 +1,14 @@
 
 <%=semantic_form_for @alert do |f|%>
 <%=f.inputs do%>
-<%=f.input :lugar%>
-<%=f.input :content, :as => :text,:input_html => { :rows => 3 } %>
+<%=f.input :lugar, :label => "Ingrese la dirección!"%>
+<%=f.input :content, :as => :text,:input_html => { :rows => 3 }, :label => "Ingrese una descripción del suceso." %>
 <%end%>
-<%=f.buttons%>
+
+<% f.buttons do %>
+<%= f.commit_button "Crear Alerta" %>
+<% end %>
+
 <%end%>
 
 <span class= "alerta">
