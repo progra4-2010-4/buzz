@@ -6,7 +6,7 @@
     <p>Comentarios</p>
     <%if @comentarios.blank?%>
       <p>No hay comentarios todavía. <%=link_to "Se el primero!", new_alert_comment_path(@alert.id)%></p>
-    <%#else%>
+    <%else%>
       <ul>
 	  <%@comentarios.each do |t|%>
 	      <li><%=t.content%></li>
