@@ -8,13 +8,15 @@ class CommentsController < ApplicationController
   def new
   @alert= Alert.find(params[:alert_id])
   @comentario = Comment.new
-  @comentario.alert_id = @alert.id
+  @comentario.alert = @alert
+  #@comentario.alert_id = @alert.id
   end
 
   def create
     @alert= Alert.find(params[:alert_id])
-    @comentario = Comment.new params[:comment]
-    @comentario.alert_id = @alert.id
+    @comentario = Comment.new
+    @comentario.alert = @alert
+    #@comentario.alert_id = @alert.id
     if @comentario.save
       redirect_to alert_path(@alert)
     else
