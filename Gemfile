@@ -12,7 +12,7 @@ gem 'nokogiri'
 gem 'formtastic', '~> 1.1.0'
 
 gem 'json'
-
+gem 'jquery-rails', '~> 0.2.5'
 gem 'dancroak-twitter-search'
 
 # Use unicorn as the web server
