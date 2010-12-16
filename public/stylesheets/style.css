@@ -10,10 +10,10 @@ background-color: #C0C0C0;
 color: #000;
 font-family: 'Josefin Sans', arial, serif;
 font-size:20px;
-border-width:3px;
-border-style:solid;
-border-color:purple;
-font-weight: 400;
+
+
+
+
 
 } 
 .links{
@@ -26,9 +26,9 @@ font-size:40px;
 text-shadow: 6px 6px 6px #FFE87C;
 font-weight: 1000;
 background-image:url(/images/1.jpg) repeat;
-border-width:3px;
-border-style:dashed;
-border-color:purple;
+
+
+
 }
 input, textarea{
 	border: 5px solid #cbcbcb;
