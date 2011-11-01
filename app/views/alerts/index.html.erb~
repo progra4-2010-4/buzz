@@ -1,0 +1,9 @@
+<h1>Alerts#index</h1>
+<p>Find me in app/views/alerts/index.html.erb</p>
+<%=semantic_form_for(@alert) do |f|%>
+<%=f.inputs%>
+<%=f.buttons%>
+<%end%>
+
+
+

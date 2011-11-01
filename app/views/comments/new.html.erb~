@@ -1,5 +1,5 @@
-<h1>Crear comentario para:</h1>
-<h3>Alerta en <%link_to @alert.lugar, alert_path(@alert) %></h3>
+<h1>Responder a la pregunta:</h1>
+<h3><%=link_to @alert.lugar, alert_path(@alert) %></h3>
 
 <%=semantic_form_for [@alert,@comment] do |f|%>
 <%=f.inputs do%>
@@ -7,7 +7,7 @@
 <%end%>
 
 <% f.buttons do %>
-<%= f.commit_button "Crear Comentario" %>
+<%= f.commit_button "Envia tu respuesta gueek! XD" %>
 <% end %>
 
 <%end%>

@@ -1,60 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TrafficReport</title>
+  <title>Pregunte, No Invente!!!!</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
-
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="/Vertigo/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Vertigo/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/Vertigo/js/script.js"></script>
+<script type="text/javascript" src="/Vertigo/js/cufon-yui.js"></script>
+<script type="text/javascript" src="/Vertigo/js/arial.js"></script>
+<script type="text/javascript" src="/Vertigo/js/cuf_run.js"></script>
   <link href="http://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet" type="text/css"/>
-  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css"/>
 
+
+ <link rel="stylesheet" href="/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/themes/pascal/pascal.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/themes/orman/orman.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/demo/style.css" type="text/css" media="screen" />
 
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'> 
-  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+  
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
-<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript">
-  var geocoder;
-  var map;
-  function initialize() {
-    geocoder = new google.maps.Geocoder();
-    var latlng = new google.maps.LatLng(14.07817, -87.20667);
-    var myOptions = {
-      zoom: 15,
-      center: latlng,
-      mapTypeId: google.maps.MapTypeId.HYBRID
-    }
-    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-    
-    var address = document.getElementById("address").innerHTML;
-    //codeAddress(address)
-  //}
+<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 
-  //function codeAddress(address) {
-    //var address = document.getElementById("address") + ", Tegucigalpa";//.value;
-    geocoder.geocode( { 'address': address}, function(results, status) {
-      if (status == google.maps.GeocoderStatus.OK) {
-        map.setCenter(results[0].geometry.location);
-        var marker = new google.maps.Marker({
-            map: map, 
-            position: results[0].geometry.location
-        });
-      } else {
-        alert("Geocode was not successful for the following reason: " + status);
-      }
-    });
-  }
-</script>
 </head>
-<div class="header" >
-<a href="/alerts/new">Smart Traffic</a>
+
+<body>
+
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="/alerts/new">Just<span>ASK</span><small>Si no lo sabe, PREGUNTE!!</small></a></h1>
+      </div>
+      <div class="menu_nav">
+        <ul>
+          <li><a href="/alerts/new">Home</a></li>
+          <li><a href="/alerts/new">Departamento IT</a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+      <div class="clr"></div>
+      </div>
+    </div>
+       <div id="wrapper">
+   
+        <div class="slider-wrapper theme-default">
+            <div class="ribbon"></div>
+            <div id="slider" class="nivoSlider">
+                <img src="/demo/images/toystory.jpg" alt="" />
+                <a href="http://dev7studios.com"><img src="/demo/images/up.jpg" alt="" /></a>
+                <img src="/demo/images/walle.jpg" alt="" />
+                <img src="/demo/images/nemo.jpg" alt="" title="#htmlcaption" />
+            </div>
+            
+  
+
+    </div>
+
+
+    </div>
+     <br/>
+      <br/>
+    
+    <div class="clr"></div>
+  </div>
+<div class="topo">  
+<div class="content">
+    <div class="mainbar">
+   
+   <%=yield%>  
+     
+    </div>
+    <div class="sidebar">
+      <div class="gadget">
+        <div class="search">
+          <form method="get" id="search" action="#">
+            <span>
+            <input type="text" value="Search..." name="s" id="s" />
+            <input name="searchsubmit" type="image" src="/Vertigo/images/search.gif" value="Go" id="searchsubmit" class="btn"  />
+            </span>
+          </form>
+          <div class="clr"></div>
+        </div>
+      </div>
+    <div class="gadget">
+        <h2 class="star"><span>Sidebar</span></h2>
+        <div class="clr"></div>
+        <ul class="sb_menu">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Direccion IT</a></li>
+          <li><a href="#">Amenazas Actuales</a></li>
+        </ul>
+      </div>
+     
+    </div>
+    <div class="clr"></div>
+  </div>
 </div>
-<br/>
-<body onload="initialize()">
 
-<%= yield %>
-
+</div>
+</div>
+ <script type="text/javascript" src="scripts/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="../jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
 </body>
 </html>

@@ -1,21 +1,24 @@
-<%= will_paginate @comentarios%>
+<div class= "dias">
+
 <div id="wrap">
   <div id="col1">
-    <p id="address"> <%=@alert.lugar %>, Tegucigalpa</p>
-    <p id="content"> <%= @alert.content%> </p>
+    <p class = "13"><%=@alert.lugar %></p>
+    <h4 class = "16"><%= @alert.content%></h4>
     <!--<input type="button" value="Geocode" onclick="codeAddress()">-->
-    <p>Comentarios</p>
+   <h1>Comentarios</h1>
     <%if @comentarios.blank?%>
-      <p>No hay comentarios todavía. <%=link_to "Se el primero!", new_alert_comment_path(@alert.id)%></p>
+      <p>No hay respuestas todavía. <%=link_to "Se el primero!", new_alert_comment_path(@alert.id)%></p>
     <%else%>
       <ul>
 	  <%@comentarios.each do |t|%>
-	      <li><%=t.content%></li>
+	      <li class = "nones"><h2 class="star"><%=t.content%></h4></li>
 	      <br/>
 	  <%end%>
       </ul>
-      <p><%=link_to "Agregar nuevo comentario.", new_alert_comment_path(@alert.id)%></p>
+      <%= will_paginate @comentarios%>
+      <p><%=link_to "Tienes una mejor respuesta!  COMENTA!! .", new_alert_comment_path(@alert.id)%></p>
     <%end%>
   </div>
-  <div id="map_canvas"></div>
+  
+</div>
 </div>

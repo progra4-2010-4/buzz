@@ -1,28 +1,30 @@
+
+<div class= "dias">
 <%=semantic_form_for @alert do |f|%>
 <%=f.inputs do%>
-<%=f.input :lugar, :label => "Ingrese la dirección!"%>
-<%=f.input :content, :as => :text,:input_html => { :rows => 3 }, :label => "Ingrese una descripción del suceso." %>
+<p>
+<h4><%=f.input :lugar, :label => "Ponle un titulo a tu duda!!"%></h4>
+<h4><%=f.input :content, :as => :text,:input_html => { :rows => 3 }, :label => "Que es lo que no sabes???" %></h4></p>
 <%end%>
 
 <% f.buttons do %>
-<%= f.commit_button "Crear Alerta" %>
+<h2><%= f.commit_button "Enviar Duda!!!" %></h2>
 <% end %>
 
 <%end%>
 
-<span class= "alerta">
-<%=@twets[0].text%>
-</span>
+<br/>
 
 <%= will_paginate @alertas%>
 
 <%@alertas.each do |t|%>
-<span class ="alerta">
-<strong><%=t.lugar%>:</strong>
-<%=t.content%> 
-<br/>
-<h6><%=link_to  "Ver Alerta", alert_path(t)%> created: <%=distance_of_time_in_words DateTime.now, t.created_at%> ago. <%=link_to "Comentar", new_alert_comment_path(t.id)%></h6>
+<span class ="contenta">
+<h2 class="star"><%=t.lugar%></h2>
+<p><%=t.content%></p> 
+<p><%=link_to  "Ver Duda!! ", alert_path(t)%> created: <%=distance_of_time_in_words DateTime.now, t.created_at%> ago. <%=link_to "Sabes la respuesta?? COMENTALO!!", new_alert_comment_path(t.id)%></p>
 </span>
+<br/>
 <%end%>
 
 
+</div>

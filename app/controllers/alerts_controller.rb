@@ -1,5 +1,5 @@
 class AlertsController < ApplicationController
-	require 'open-uri'
+
   def index
   
   end
@@ -36,7 +36,7 @@ class AlertsController < ApplicationController
   @alert = Alert.new 
   @alertas= Alert.all.reverse!
   @alertas = Alert.find(:all, :order => 'created_at DESC').paginate(:per_page => 3, :page => params[:page])
-  client = TwitterSearch::Client.new('buzz')
-  @twets = client.query(:q => 'from:traficoentegus')  
+ 
+  
   end
 end
